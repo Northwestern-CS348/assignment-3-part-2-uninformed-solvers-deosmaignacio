@@ -1,0 +1,175 @@
+TESTS WITH ERRORS 
+test04_GM_Hanoi_04 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 122, in test04_GM_Hanoi_04
+    self.assertEqual(th.getGameState(), ((3,4,5),(),(1,2)))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_game_masters.py", line 41, in getGameState
+    for peg in pegs:
+TypeError: 'bool' object is not iterable
+
+test07_GM_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 166, in test07_GM_8Puzzle_03
+    move1 = movables[0]
+TypeError: 'bool' object is not subscriptable
+
+test14_BFS_Hanoi_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 309, in test14_BFS_Hanoi_03
+    solver = SolverBFS(th, ((),(),(1,2,3,4,5)))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 59, in __init__
+    super().__init__(gameMaster, victoryCondition)
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\solver.py", line 20, in __init__
+    self.currentState = GameState(self.gm.getGameState(), 0, None)
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_game_masters.py", line 41, in getGameState
+    for peg in pegs:
+TypeError: 'bool' object is not iterable
+
+test15_DFS_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 333, in test15_DFS_8Puzzle_01
+    [20, ((-1, 1, 4), (5, 2, 3), (6, 7, 8))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 28, in solveOneStep
+    if len(movesToMake) <= curr:
+TypeError: object of type 'bool' has no len()
+
+test18_BFS_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 390, in test18_BFS_8Puzzle_01
+    [21, ((6, 5, 4), (1, -1, 8), (7, 3, 2))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 92, in solveOneStep
+    for move in possibleMoves:
+TypeError: 'bool' object is not iterable
+
+test19_BFS_8Puzzle_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 409, in test19_BFS_8Puzzle_02
+    [6, ((5, 4, 8), (6, 1, 2), (7, 3, -1))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 52, in runPlayXSteps
+    results = self.pool.apply_async(self.playXSteps, [solver, plays]).get(timeout)
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 683, in get
+    raise self._value
+  File "C:\Program Files\Python37\lib\multiprocessing\pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 27, in playXSteps
+    solver.solveOneStep()
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\student_code_uninformed_solvers.py", line 92, in solveOneStep
+    for move in possibleMoves:
+TypeError: 'bool' object is not iterable
+
+-------------------------------
+TESTS FAILED  
+test05_GM_8Puzzle_01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 136, in test05_GM_8Puzzle_01
+    self.assertTrue(p8.isWon())
+AssertionError: False is not true
+
+test08_GM_8Puzzle_04 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 200, in test08_GM_8Puzzle_04
+    self.assertEqual(p8.getGameState(), ((1,-1,3,),(8,2,4),(7,6,5)))
+AssertionError: Tuples differ: ((1, 2, 3), (8, -1, 4), (7, 6, 5)) != ((1, -1, 3), (8, 2, 4), (7, 6, 5))
+
+First differing element 0:
+(1, 2, 3)
+(1, -1, 3)
+
+- ((1, 2, 3), (8, -1, 4), (7, 6, 5))
+?      ^          ^^
+
++ ((1, -1, 3), (8, 2, 4), (7, 6, 5))
+?      ^^          ^
+
+
+test13_BFS_Hanoi_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 296, in test13_BFS_Hanoi_02
+    [23, ((5,), (4,), (1, 2, 3))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((4, 5), (1, 2), (3,)) != ((4, 5), (1,), (2, 3))
+
+First differing element 1:
+(1, 2)
+(1,)
+
+- ((4, 5), (1, 2), (3,))
+?             --     -
+
++ ((4, 5), (1,), (2, 3))
+?                 +++
+
+
+test16_DFS_8Puzzle_02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 352, in test16_DFS_8Puzzle_02
+    [30, ((8, 1, -1), (7, 2, 3), (6, 5, 4))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((1, 2, 3), (8, -1, 4), (7, 6, 5)) != ((8, 3, 4), (7, -1, 1), (6, 2, 5))
+
+First differing element 0:
+(1, 2, 3)
+(8, 3, 4)
+
+- ((1, 2, 3), (8, -1, 4), (7, 6, 5))
++ ((8, 3, 4), (7, -1, 1), (6, 2, 5))
+
+test17_DFS_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 371, in test17_DFS_8Puzzle_03
+    [8, ((8, 3, 4), (2, -1, 1), (7, 6, 5))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((1, 2, 3), (8, -1, 4), (7, 6, 5)) != ((8, 1, 3), (-1, 2, 4), (7, 6, 5))
+
+First differing element 0:
+(1, 2, 3)
+(8, 1, 3)
+
+- ((1, 2, 3), (8, -1, 4), (7, 6, 5))
+?     ---      ---
+
++ ((8, 1, 3), (-1, 2, 4), (7, 6, 5))
+?   +++            +++
+
+
+test20_BFS_8Puzzle_03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 428, in test20_BFS_8Puzzle_03
+    [7, ((1, 2, -1), (8, 4, 3), (7, 6, 5))],
+  File "C:\Users\kille\academics\automatedgradingapp\app\testing\uninformed-solvers\gradingtests.py", line 55, in runPlayXSteps
+    self.assertEqual(results[index], expected)
+AssertionError: Tuples differ: ((1, 2, 3), (8, -1, 4), (7, 6, 5)) != ((-1, 1, 3), (8, 2, 4), (7, 6, 5))
+
+First differing element 0:
+(1, 2, 3)
+(-1, 1, 3)
+
+- ((1, 2, 3), (8, -1, 4), (7, 6, 5))
+?      ^          ^^
+
++ ((-1, 1, 3), (8, 2, 4), (7, 6, 5))
+?   +   ^          ^
+
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------
